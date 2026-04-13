@@ -1,0 +1,10 @@
+P = int(input('Primeiro número: '))
+S = int(input('Segundo número: '))
+T = int(input('Terceiro número '))
+
+if P <= S and S <= T : print('Ordem: {}, {}, {}.' .format(P , S , T))
+elif P >= S and T >= P : print('Ordem: {}, {}, {}.' .format(S , P , T))
+elif P >= S and S >= T : print('Ordem: {}, {}, {}.' .format(T , S , P))
+elif P >= S and S <= T : print('Ordem: {}, {}, {}.' .format(S , T , P))
+elif P <= S and P <= T : print('Ordem: {}, {}, {}.' .format(P , T , S))
+elif P <= S and P >= T : print('Ordem: {}, {}, {}.' .format(T , P , S))
